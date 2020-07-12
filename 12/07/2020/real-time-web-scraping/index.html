@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index, follow"><title>Real-time web scraping, a new world to explore • David Torres</title><meta name="description" content="Real-time web scraping, a new world to explore - David Torres"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="https://unpkg.com/nanoreset@3.0.1/nanoreset.min.css"><link rel="stylesheet" href="/css/theme.css"><link rel="search" type="application/opensearchdescription+xml" href="/atom.xml" title="David Torres"><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="David Torres" type="application/atom+xml">
+</head><body><div class="wrap" id="barba-wrapper"><header><h1 class="branding"><a href="/" title="David Torres"><img class="logo-image" src="/logo.svg" alt="logo"></a></h1><ul class="nav nav-list"><li class="nav-list-item"><a class="nav-list-link no-barba" href="/" target="_self">HOME</a></li><li class="nav-list-item"><a class="nav-list-link no-barba" href="/about" target="_self">ABOUT</a></li><li class="nav-list-item"><a class="nav-list-link no-barba" href="/archives" target="_self">ARCHIVES</a></li><li class="nav-list-item"><a class="nav-list-link no-barba" href="https://github.com/datoga" target="_blank">GITHUB</a></li><li class="nav-list-item"><a class="nav-list-link no-barba" href="/atom.xml" target="_self">RSS</a></li></ul></header><div class="barba-container"><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Real-time web scraping, a new world to explore</h1><div class="post-info"><a></a>12-07-2020</div><div class="post-content"><p>You can find tons of information on the Internet about <a href="https://en.wikipedia.org/wiki/Web_scraping" target="_blank" rel="noopener">web scraping</a>. Web scraping is a quite old technique used to extract information from websites.</p>
+<p>But, are not APIs intended to do this? Well, yes, of course, but sadly APIs are not everywhere. Indeed, the most typical situation will be a website, not suited to machines but humans, with interesting information but not with an API.</p>
+<p>Scraping the website, you can extract the information you need, parsing the website and making it machine-readable and allowing to interact and analyse the information of the website.</p>
+<p>There are a lot of tools to scrape websites, but they are <em>slow</em>. For example, there are a lot of <a href="https://realpython.com/beautiful-soup-web-scraper-python" target="_blank" rel="noopener">powerful libraries</a> in Python. You tipically don’t need real-time information so we are fine.</p>
+<p>But, what happens if you need real-time information? For example, you need to get stock information, betting quotes, flight prices, park spaces, etc. They all have one characteristic in common: they change, and change quickly!</p>
+<p>In all these cases you have to apply different sophisticated techniques in order to get updated information. Of course, the performance in this case is a key feature you cannot forget.</p>
+<p>In the next articles I will research about this problem, trying to find out:</p>
+<ul>
+<li><p>The time that is needed in each step when you scrape a website, identifying where are the bottlenecks.</p>
+</li>
+<li><p>The best framework to scrape real-time information. I will consider Python, Golang, Rust and plain curl, making comparisons between them.</p>
+</li>
+<li><p>The list of problems &amp; optimizations that should be done in order to avoid those issues.</p>
+</li>
+<li><p>A good architecture to support information from multiple sources. This could not be important in stock prices (the stock price is universal) but is relevant for example on betting quotes, where each betting house has different quotes on the same event.</p>
+</li>
+</ul>
+<p>Follow me on <a href="https://www.linkedin.com/in/datoga/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+</div></article></div></main><footer><div class="paginator"></div><div id="disqus_thread"></div><script>var disqus_shortname = 'david-torres';
+var disqus_identifier = '12/07/2020/real-time-web-scraping/';
+var disqus_title = 'Real-time web scraping, a new world to explore';
+var disqus_url = 'http://datoga.es/12/07/2020/real-time-web-scraping/';
+(function () {
+    var dsq = document.createElement('script'); dsq.async = true;
+    dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//david-torres.disqus.com/count.js" async></script><div class="copyright"><p>&copy; 2020 <a href="http://datoga.es">David Torres</a><br>Powered by <a href="https://hexo.io/" rel="noreferrer" target="_blank">Hexo</a></p></div></footer></div></div><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-27802531-3']);
+_gaq.push(['_trackPageview']);
+
+(function () {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script><script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script><script>document.addEventListener('DOMContentLoaded', function() {
+    Barba.Pjax.start()
+})</script></body></html>

@@ -1,63 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>David Torres</title>
   
-  
+  <subtitle>Gopher and backend developer</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2020-07-11T06:35:48.069Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://datoga.es/"/>
+  <updated>2020-07-12T15:04:50.493Z</updated>
+  <id>http://datoga.es/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>David Torres</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>First blog entry</title>
-    <link href="http://yoursite.com/2020/07/11/First-blog-entry/"/>
-    <id>http://yoursite.com/2020/07/11/First-blog-entry/</id>
-    <published>2020-07-11T09:00:00.000Z</published>
-    <updated>2020-07-11T06:35:48.069Z</updated>
+    <title>Real-time web scraping, a new world to explore</title>
+    <link href="http://datoga.es/12/07/2020/real-time-web-scraping/"/>
+    <id>http://datoga.es/12/07/2020/real-time-web-scraping/</id>
+    <published>2020-07-12T15:00:00.000Z</published>
+    <updated>2020-07-12T15:04:50.493Z</updated>
     
-    <content type="html"><![CDATA[<p>This is the very first blog entry in my personal site, just for testing.</p>]]></content>
+    <content type="html"><![CDATA[<p>You can find tons of information on the Internet about <a href="https://en.wikipedia.org/wiki/Web_scraping" target="_blank" rel="noopener">web scraping</a>. Web scraping is a quite old technique used to extract information from websites.</p><p>But, are not APIs intended to do this? Well, yes, of course, but sadly APIs are not everywhere. Indeed, the most typical situation will be a website, not suited to machines but humans, with interesting information but not with an API.</p><p>Scraping the website, you can extract the information you need, parsing the website and making it machine-readable and allowing to interact and analyse the information of the website.</p><p>There are a lot of tools to scrape websites, but they are <em>slow</em>. For example, there are a lot of <a href="https://realpython.com/beautiful-soup-web-scraper-python" target="_blank" rel="noopener">powerful libraries</a> in Python. You tipically don’t need real-time information so we are fine.</p><p>But, what happens if you need real-time information? For example, you need to get stock information, betting quotes, flight prices, park spaces, etc. They all have one characteristic in common: they change, and change quickly!</p><p>In all these cases you have to apply different sophisticated techniques in order to get updated information. Of course, the performance in this case is a key feature you cannot forget.</p><p>In the next articles I will research about this problem, trying to find out:</p><ul><li><p>The time that is needed in each step when you scrape a website, identifying where are the bottlenecks.</p></li><li><p>The best framework to scrape real-time information. I will consider Python, Golang, Rust and plain curl, making comparisons between them.</p></li><li><p>The list of problems &amp; optimizations that should be done in order to avoid those issues.</p></li><li><p>A good architecture to support information from multiple sources. This could not be important in stock prices (the stock price is universal) but is relevant for example on betting quotes, where each betting house has different quotes on the same event.</p></li></ul><p>Follow me on <a href="https://www.linkedin.com/in/datoga/" target="_blank" rel="noopener">LinkedIn</a>.</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;This is the very first blog entry in my personal site, just for testing.&lt;/p&gt;
-
+        &lt;p&gt;You can find tons of information on the Internet about &lt;a href=&quot;https://en.wikipedia.org/wiki/Web_scraping&quot; target=&quot;_blank&quot; rel=&quot;noopener
       
     
     </summary>
     
     
     
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2020/07/11/hello-world/"/>
-    <id>http://yoursite.com/2020/07/11/hello-world/</id>
-    <published>2020-07-11T06:35:48.069Z</published>
-    <updated>2020-07-11T06:35:48.069Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
+      <category term="web scraping, real-time" scheme="http://datoga.es/tags/web-scraping-real-time/"/>
     
   </entry>
   
