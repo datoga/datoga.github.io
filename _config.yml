@@ -3,19 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+title: David Torres
+subtitle: 'Gopher and backend developer'
+description: 'Personal site of David Torres, Gopher and backend developer'
+keywords: 'golang, go, backend, developer'
+author: David Torres
 language: en
-timezone: ''
+timezone: 'Europe/Madrid'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://datoga.es
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :day/:month/:year/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -58,7 +58,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 5
   order_by: -date
 
 # Category & Tag
@@ -99,3 +99,4 @@ theme: brewski
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: ''
+
