@@ -2,8 +2,8 @@ name: Brewski
 url: https://github.com/tiaanduplessis/hexo-theme-brewski
 
 menu:
-  Home: /
-  About: /about
+  Blog: /
+  About me: /about
   Archives: /archives
   #Impressum:
   GitHub: https://github.com/datoga
@@ -22,4 +22,4 @@ google_analytics: UA-27802531-3
 copyright:
   since: 
   name: David Torres
-  url: http://datoga.es
+  url: https://datoga.es
