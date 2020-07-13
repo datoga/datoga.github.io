@@ -6,7 +6,7 @@ tags: web scraping, real-time
 
 You can find tons of information on the Internet about [web scraping](https://en.wikipedia.org/wiki/Web_scraping). Web scraping is a quite old technique used to extract information from websites.
 
-But, are not APIs intended to do this? Well, yes, of course, but sadly APIs are not everywhere. Indeed, the most typical situation will be a website with interesting information, which is meant to be human-readable, and it lacks in API to access the information directly from source code.
+But, are not APIs intended to do this? Well, yes, of course, but sadly APIs are not everywhere. Indeed, the most typical situation will be a website with interesting information, which is meant to be human-readable, and it lacks an API to access the information directly from source code.
 
 <!-- more -->
 
