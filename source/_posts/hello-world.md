@@ -10,4 +10,4 @@ During my career (almost 14 years!) I have been coding in different languages, a
 
 Yes, I love [Go](https://play.golang.org/). With the same effort that you would need in different languages you get a much more quality code (in terms of readibility and maintainability) and very efficient results, with nearly the performance you get in C/C++ or Rust.
 
-This blog begins a journey. I have decided to focus my career on polish my code skills, revisiting the well-known principles (SOLID design, clean code, etc.) but also learning the newest techniques and tools to achieve the best results in terms of quality and performance.
+This blog begins a journey. I have decided to focus my career to polish my code skills, revisiting the well-known principles (SOLID design, clean code, etc.) and learning the newest techniques and tools to achieve the best results in terms of quality and performance.
