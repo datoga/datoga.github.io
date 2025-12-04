@@ -20,11 +20,45 @@ import { MENTORING } from "@consts";
 					}
 					{
 						MENTORING.CALLOUT && (
-							<div class="animate p-5 rounded-xl border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950/30 shadow-md">
+							<div class="animate p-6 rounded-xl border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950/30 shadow-md space-y-4">
+								{MENTORING.CALLOUT_TITLE && (
+									<p class="text-xl font-bold text-blue-900 dark:text-blue-100">
+										{MENTORING.CALLOUT_TITLE}
+									</p>
+								)}
 								<p
 									class="text-base font-medium text-blue-900 dark:text-blue-100 leading-relaxed"
 									set:html={MENTORING.CALLOUT}
 								/>
+								<h3 class="text-lg font-semibold text-blue-900 dark:text-blue-100 pt-2">
+									¿En qué consiste?
+								</h3>
+								<ul class="space-y-2 list-none text-blue-800 dark:text-blue-200">
+									<li>
+										👋 Sesión inicial para conocernos, sin
+										tiempo definido.
+									</li>
+									<li>
+										📅 Sesiones de 1 hora cada 4 semanas
+										durante un semestre.
+									</li>
+									<li>
+										✅ Sesión final para evaluar objetivos y
+										trabajo futuro.
+									</li>
+									<li>
+										🎯 Trabajamos en los temas que tú
+										elijas.
+									</li>
+									<li>
+										💬 Tendrás mi teléfono para contactarme
+										cuando lo necesites.
+									</li>
+									<li>
+										🤝 Al finalizar, quedada grupal para
+										quienes lo deseen.
+									</li>
+								</ul>
 							</div>
 						)
 					}

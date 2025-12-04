@@ -34,6 +34,7 @@ export type MentoringPage = {
   DESCRIPTION: string;
   PARAGRAPHS: string[];
   CALLOUT?: string;
+  CALLOUT_TITLE?: string;
   YOUTUBE_ID: string;
   VIDEO_TITLE: string;
   FAQ_TITLE: string;

@@ -113,18 +113,15 @@ export const MENTORING: MentoringPage = {
   TITLE: "🚀 Go for it",
   DESCRIPTION: "Go for it: programa de mentoría gratuita con David Torres. Sesiones personalizadas 1:1 sobre desarrollo de software, carrera profesional y crecimiento personal. Solo 4 plazas por semestre.",
   PARAGRAPHS: [
-    `¿Te encuentras estancado en tu carrera? ¿Estás pasando por un bache personal? ¿Quieres mejorararte a ti mismo? <strong>🚀 Go for it</strong> es un programa de mentoría <strong>gratuito</strong> donde podemos trabajar juntos en tus objetivos.`,
+    `¿Te encuentras estancado en tu carrera? ¿Estás pasando por un bache personal? ¿Quieres mejorarte a ti mismo? <strong>🚀 Go for it</strong> es un programa de mentoría <strong>gratuito</strong> donde podemos trabajar juntos en tus objetivos.`,
     `No solo hablamos de tecnología. Las sesiones pueden cubrir desarrollo de software, estilo de vida, filosofía, inversiones o en general cualquier área donde pueda aportarte valor.`,
   ],
-  CALLOUT: `El programa está limitado a <strong>4 personas por semestre</strong>.<br/>Próxima edición: <strong>1 de enero de 2026</strong>.`,
+  CALLOUT: `Programa limitado a solo <strong>4 personas</strong> por semestre.`,
+  CALLOUT_TITLE: `🚀 1ª EDICIÓN - ENERO 2026`,
   YOUTUBE_ID: "CWDz1-w36h0",
   VIDEO_TITLE: "Conoce 🚀 Go for it",
   FAQ_TITLE: "Preguntas frecuentes",
   FAQ: [
-    {
-      QUESTION: "¿En qué consiste el programa?",
-      ANSWER: "Inicialmente, realizamos una sesión para conocernos, sin un tiempo definido. Posteriormente, realizamos una sesión de 1 hora cada 4 semanas, durante un semestre completo. Trabajamos en los temas que tú elijas. Además, tendrás mi WhatsApp para que puedas contactarme en cualquier momento para aclaraciones, dudas o para apoyo.",
-    },
     {
       QUESTION: "¿Las sesiones han de ser presenciales?",
       ANSWER: "Si vives en Valencia o alrededores, es preferible quedar en persona, a poder ser en un parque para entrenar (qué mejor manera de conocerse). Si no eres de Valencia o no te viene bien, no te preocupes, podemos hacer las sesiones por videollamada sin problema.",
@@ -144,6 +141,10 @@ export const MENTORING: MentoringPage = {
     {
       QUESTION: "¿Por qué solo 4 personas por semestre?",
       ANSWER: "El programa está limitado a 4 personas porque así puedo trabajar con una persona por semana, durante el semestre. De esta forma, puedo dedicar el tiempo y atención necesarios a cada participante, sin comprometer mi espacio personal. No te preocupes, si quedas fuera de la presente edición, te añadiré a la lista de espera para la próxima.",
+    },
+    {
+      QUESTION: "¿Será confidencial?",
+      ANSWER: "Sí, todo lo que hagamos será confidencial. No voy a guardar ningún tipo de información personal. No voy a hacer ningún tipo de seguimiento, ni nada que pueda comprometer tu privacidad. Si estás más a gusto, podemos incluso firmar un acuerdo de confidencialidad.",
     },
   ],
 };
