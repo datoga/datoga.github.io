@@ -48,7 +48,7 @@ export const BIO: Bio = {
 
 export const PROMO = {
   ENABLED: true,
-  TEXT: "🚀 Go for it — Programa de mentoría gratuito. Empieza el 1 de enero de 2026.",
+  TEXT: "🚀 Go for it! — Programa de mentoría gratuito. Empieza el 1 de enero de 2026.",
   LINK_TEXT: "Más información",
   LINK_HREF: "/go-for-it",
 };
@@ -96,7 +96,7 @@ export const SOCIALS: Socials = [
 
 export const NAV_LINKS: NavLink[] = [
   {
-    NAME: "🚀 Go for it",
+    NAME: "🚀 Go for it!",
     HREF: "/go-for-it",
   },
   {
@@ -110,11 +110,11 @@ export const NAV_LINKS: NavLink[] = [
 // ============================================
 
 export const MENTORING: MentoringPage = {
-  TITLE: "Go for it",
-  PAGE_TITLE: "🚀 Go for it",
-  DESCRIPTION: "Go for it: programa de mentoría gratuita con David Torres. Sesiones personalizadas 1:1 sobre desarrollo de software, carrera profesional y crecimiento personal. Solo 4 plazas por semestre.",
+  TITLE: "Go for it!",
+  PAGE_TITLE: "🚀 Go for it!",
+  DESCRIPTION: "Go for it!: programa de mentoría gratuita con David Torres. Sesiones personalizadas 1:1 sobre desarrollo de software, carrera profesional y crecimiento personal. Solo 4 plazas por semestre.",
   PARAGRAPHS: [
-    `¿Te encuentras estancado en tu carrera? ¿Estás pasando por un bache personal? ¿Quieres mejorarte a ti mismo? <strong>🚀 Go for it</strong> es un programa de mentoría <strong>gratuito</strong> donde podemos trabajar juntos en tus objetivos.`,
+    `¿Te encuentras estancado en tu carrera? ¿Estás pasando por un bache personal? ¿Quieres mejorarte a ti mismo? <strong>🚀 Go for it!</strong> es un programa de mentoría <strong>gratuito</strong> donde podemos trabajar juntos en tus objetivos.`,
     `No solo hablamos de tecnología. Las sesiones pueden cubrir desarrollo de software, estilo de vida, filosofía, inversiones o en general cualquier área donde pueda aportarte valor.`,
   ],
   CALLOUT: `Programa <strong>gratuito</strong> limitado a solo <strong>4 personas</strong> por semestre.`,
@@ -129,7 +129,7 @@ export const MENTORING: MentoringPage = {
     `🤝 Al finalizar, quedada grupal para quienes lo deseen.`,
   ],
   YOUTUBE_ID: "CWDz1-w36h0",
-  VIDEO_TITLE: "Conoce 🚀 Go for it",
+  VIDEO_TITLE: "Conoce 🚀 Go for it!",
   FAQ_TITLE: "Preguntas frecuentes",
   FAQ: [
     {
