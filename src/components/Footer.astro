@@ -1,0 +1,24 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="border-t border-slate-800/50 mt-20">
+    <div class="max-w-4xl mx-auto px-6 py-10 text-center">
+        <p class="text-slate-500">
+            &copy; {currentYear}
+            <a
+                href="https://datoga.es"
+                class="text-cyan-400 hover:text-cyan-300 transition-colors"
+                >David Torres</a
+            >
+        </p>
+        <p class="text-slate-600 text-sm mt-2">
+            Built with <a
+                href="https://astro.build"
+                class="underline hover:text-slate-400 transition-colors"
+                target="_blank"
+                rel="noopener">Astro</a
+            >
+        </p>
+    </div>
+</footer>
