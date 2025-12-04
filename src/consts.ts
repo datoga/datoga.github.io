@@ -37,7 +37,7 @@ export const BIO: Bio = {
   PARAGRAPHS: [
     `En camino constante para encontrar una mejor versión de mí mismo.`,
     `Ingeniero Informático, entusiasta de la tecnología y el desarrollo de software. Calisténico. Ajedrecista. Liberal. Inversor.`,
-    `Mi crisis de los 40 vino bastante vitaminada, con un bache médico que hizo que se me tambaleara toda mi vida. Ahora trabajo en mejorar a nivel personal en todas mis facetas.`,
+    `Mi crisis de los 40 vino bastante vitaminada, con un bache médico que hizo que se tambaleara toda mi vida. Ahora trabajo en mejorar a nivel personal en todas mis facetas.`,
     `Durante este proceso, me he encontrado con algunas personas que me han ayudado a crecer y mejorar. Quiero compartir mi experiencia con otros para que puedan hacer lo mismo.`
   ],
 };
