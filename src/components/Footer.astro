@@ -1,5 +1,6 @@
 ---
 import Container from "@components/Container.astro";
+import Link from "@components/Link.astro";
 import { SITE } from "@consts";
 import BackToTop from "@components/BackToTop.astro";
 ---
@@ -15,7 +16,7 @@ import BackToTop from "@components/BackToTop.astro";
       <div>
         &copy; {new Date().getFullYear()}
         {`|`}
-        {SITE.NAME}
+        <Link href="/contacto">{SITE.NAME}</Link>
       </div>
       <div class="flex flex-wrap gap-1 items-center">
         <button
