@@ -7,20 +7,28 @@ import { HOME, BIO, FEATURED_VIDEO, PROMO } from "@consts";
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
 	<Container>
-		<h4 class="animate font-semibold text-black dark:text-white">
-			{BIO.GREETING}
-			<span class="text-xl">{BIO.EMOJI}</span>
-		</h4>
-		<div class="space-y-16">
-			<section class="space-y-6">
-				<article class="space-y-4">
-					{
-						BIO.PARAGRAPHS.map((paragraph) => (
-							<p class="animate" set:html={paragraph} />
-						))
-					}
-				</article>
-			</section>
+		<div class="flex flex-col sm:flex-row gap-6 items-start">
+			<img 
+				src="/david.jpg" 
+				alt="David Torres"
+				class="animate w-32 h-32 rounded-full object-cover border-2 border-black/10 dark:border-white/10 flex-shrink-0"
+			/>
+			<div>
+				<h1 class="animate text-xl font-semibold text-black dark:text-white">
+					{BIO.GREETING}
+					<span class="text-xl">{BIO.EMOJI}</span>
+				</h1>
+				<blockquote class="animate mt-3 pl-4 border-l-2 border-black/20 dark:border-white/30 italic text-lg" set:html={BIO.PARAGRAPHS[0]} />
+			</div>
+		</div>
+		<article class="space-y-4 mt-8">
+			{
+				BIO.PARAGRAPHS.slice(1).map((paragraph) => (
+					<p class="animate" set:html={paragraph} />
+				))
+			}
+		</article>
+		<div class="space-y-16 mt-16">
 
 			{
 				PROMO.ENABLED && (
