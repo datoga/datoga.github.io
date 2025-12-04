@@ -114,7 +114,7 @@ export const MENTORING: MentoringPage = {
   PAGE_TITLE: "🚀 Go for it!",
   DESCRIPTION: "Go for it!: programa de mentoría gratuita con David Torres. Sesiones personalizadas 1:1 sobre desarrollo de software, carrera profesional y crecimiento personal. Solo 4 plazas por semestre.",
   PARAGRAPHS: [
-    `¿Te encuentras estancad@ en tu carrera? ¿Estás pasando por un bache personal? ¿Quieres mejorarte a ti mism@? <strong>🚀 Go for it!</strong> es un programa de mentoría <strong>gratuito</strong> donde podemos trabajar juntos en tus objetivos.`,
+    `¿Te sientes estancad@ en tu carrera? ¿Estás atravesando un bache personal? ¿Quieres invertir en tu crecimiento y mejorar tu versión actual? <strong>🚀 Go for it!</strong> es un programa de mentoría <strong>gratuito</strong> donde podemos trabajar juntos en tus objetivos.`,
     `No solo hablamos de tecnología. Las sesiones pueden cubrir desarrollo de software, estilo de vida, filosofía, inversiones o en general cualquier área donde pueda aportarte valor.`,
   ],
   CALLOUT: `Programa <strong>gratuito</strong> limitado a solo <strong>4 personas</strong> por semestre.`,
