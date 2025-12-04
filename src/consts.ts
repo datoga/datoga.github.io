@@ -122,8 +122,8 @@ export const MENTORING: MentoringPage = {
   FAQ_TITLE: "Preguntas frecuentes",
   FAQ: [
     {
-      QUESTION: "¿Cómo funcionan las sesiones?",
-      ANSWER: "Inicialmente, realizamos una sesión para conocernos, sin un tiempo definido. Posteriormente, realizamos una sesión de 1 hora cada 2 semanas, durante un semestre completo. Trabajamos en los temas que tú elijas.",
+      QUESTION: "¿En qué consiste el programa?",
+      ANSWER: "Inicialmente, realizamos una sesión para conocernos, sin un tiempo definido. Posteriormente, realizamos una sesión de 1 hora cada 4 semanas, durante un semestre completo. Trabajamos en los temas que tú elijas. Además, tendrás mi teléfono para que puedas contactarme en cualquier momento para aclaraciones, dudas o para apoyo.",
     },
     {
       QUESTION: "¿Las sesiones han de ser presenciales?",
