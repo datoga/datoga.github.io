@@ -31,6 +31,7 @@ export type FAQItem = {
 
 export type MentoringPage = {
   TITLE: string;
+  PAGE_TITLE?: string;
   DESCRIPTION: string;
   PARAGRAPHS: string[];
   CALLOUT?: string;

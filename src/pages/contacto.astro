@@ -8,14 +8,21 @@ import { SITE, SOCIALS, UI_TEXTS } from "@consts";
 
 <PageLayout title={UI_TEXTS.CONNECT_TITLE} description={UI_TEXTS.CONNECT_TEXT}>
 	<Container>
-		<h1 class="animate text-2xl font-semibold text-black dark:text-white">
-			{UI_TEXTS.CONNECT_TITLE}
-		</h1>
-		<div class="space-y-16">
+		<div class="flex flex-col sm:flex-row gap-6 items-start">
+			<img 
+				src="/david.jpg" 
+				alt="David Torres"
+				class="animate w-32 h-32 rounded-full object-cover border-2 border-black/10 dark:border-white/10 flex-shrink-0"
+			/>
+			<div>
+				<h1 class="animate text-xl font-semibold text-black dark:text-white">
+					{UI_TEXTS.CONNECT_TITLE}
+				</h1>
+				<p class="animate mt-2">{UI_TEXTS.CONNECT_TEXT}</p>
+			</div>
+		</div>
+		<div class="space-y-16 mt-8">
 			<section class="animate space-y-4">
-				<article>
-					<p>{UI_TEXTS.CONNECT_TEXT}</p>
-				</article>
 				<ul class="flex flex-wrap gap-4">
 					{
 						SOCIALS.map((SOCIAL) => (
