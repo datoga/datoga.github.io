@@ -13,18 +13,42 @@ import { MENTORING } from "@consts";
 			<!-- Intro + Video -->
 			<section class="space-y-6">
 				<article class="space-y-4">
-					{MENTORING.PARAGRAPHS.map((paragraph) => (
-						<p class="animate" set:html={paragraph} />
-					))}
+					{
+						MENTORING.PARAGRAPHS.map((paragraph) => (
+							<p class="animate" set:html={paragraph} />
+						))
+					}
+					{
+						MENTORING.CALLOUT && (
+							<div class="animate p-5 rounded-xl border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950/30 shadow-md">
+								<p
+									class="text-base font-medium text-blue-900 dark:text-blue-100 leading-relaxed"
+									set:html={MENTORING.CALLOUT}
+								/>
+							</div>
+						)
+					}
 				</article>
-				<div class="animate aspect-video w-full rounded-xl overflow-hidden border border-black/10 dark:border-white/10">
+			</section>
+
+			<!-- Registration Form -->
+			<section class="animate space-y-6">
+				<h2 class="text-xl font-semibold text-black dark:text-white">
+					Solicita tu plaza
+				</h2>
+				<div
+					class="w-full rounded-xl overflow-hidden border border-black/10 dark:border-white/10"
+				>
 					<iframe
-						src={`https://www.youtube.com/embed/${MENTORING.YOUTUBE_ID}`}
-						title={MENTORING.VIDEO_TITLE}
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen
-						class="w-full h-full"
-					></iframe>
+						src="https://docs.google.com/forms/d/e/1FAIpQLSeGXhjxKg1jJNoSpVXE2h3IKHw9ymcTfSikapzmpO0TKaBXZw/viewform?embedded=true"
+						width="100%"
+						height="1100"
+						frameborder="0"
+						marginheight="0"
+						marginwidth="0"
+						class="bg-white dark:bg-neutral-900"
+						>Cargando formulario…</iframe
+					>
 				</div>
 			</section>
 
@@ -34,31 +58,32 @@ import { MENTORING } from "@consts";
 					{MENTORING.FAQ_TITLE}
 				</h2>
 				<div class="space-y-4">
-					{MENTORING.FAQ.map((item) => (
-						<details class="group rounded-lg border border-black/10 dark:border-white/10 p-4 cursor-pointer">
-							<summary class="font-semibold text-black dark:text-white list-none flex justify-between items-center">
-								{item.QUESTION}
-								<svg 
-									xmlns="http://www.w3.org/2000/svg" 
-									viewBox="0 0 24 24" 
-									fill="none" 
-									stroke="currentColor" 
-									stroke-width="2" 
-									stroke-linecap="round" 
-									stroke-linejoin="round"
-									class="size-5 transition-transform group-open:rotate-180"
-								>
-									<polyline points="6 9 12 15 18 9"></polyline>
-								</svg>
-							</summary>
-							<p class="mt-3 text-black/70 dark:text-white/70">
-								{item.ANSWER}
-							</p>
-						</details>
-					))}
+					{
+						MENTORING.FAQ.map((item) => (
+							<details class="group rounded-lg border border-black/10 dark:border-white/10 p-4 cursor-pointer">
+								<summary class="font-semibold text-black dark:text-white list-none flex justify-between items-center">
+									{item.QUESTION}
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="size-5 transition-transform group-open:rotate-180"
+									>
+										<polyline points="6 9 12 15 18 9" />
+									</svg>
+								</summary>
+								<p class="mt-3 text-black/70 dark:text-white/70">
+									{item.ANSWER}
+								</p>
+							</details>
+						))
+					}
 				</div>
 			</section>
 		</div>
 	</Container>
 </PageLayout>
-

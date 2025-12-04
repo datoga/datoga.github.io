@@ -22,11 +22,23 @@ export const FEATURED_VIDEO: FeaturedVideo = {
 // 👤 YOUR BIO & INTRODUCTION
 // ============================================
 
+// Calculate age dynamically
+const birthDate = new Date("1983-06-09");
+const today = new Date();
+let age = today.getFullYear() - birthDate.getFullYear();
+const m = today.getMonth() - birthDate.getMonth();
+if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+  age--;
+}
+
 export const BIO: Bio = {
-  GREETING: "Hola, soy David Torres",
+  GREETING: `Hola, soy David Torres y tengo ${age} años`,
   EMOJI: "👋🏻",
   PARAGRAPHS: [
-    `Me gusta pensar y desarrollar nuevas ideas. Ingeniero Informático. Ajedrecista. Liberal.`,
+    `En camino constante para encontrar una mejor versión de mí mismo.`,
+    `Ingeniero Informático, entusiasta de la tecnología y el desarrollo de software. Calisténico. Ajedrecista. Liberal. Inversor.`,
+    `Mi crisis de los 40 vino bastante vitaminada, con un bache médico que hizo que se me tambaleara toda mi vida. Ahora trabajo en mejorar a nivel personal en todas mis facetas.`,
+    `Durante este proceso, me he encontrado con algunas personas que me han ayudado a crecer y mejorar. Quiero compartir mi experiencia con otros para que puedan hacer lo mismo.`
   ],
 };
 
@@ -56,7 +68,7 @@ export const UI_TEXTS = {
 
 export const HOME: Metadata = {
   TITLE: "Inicio",
-  DESCRIPTION: "Sitio personal de David Torres, Gopher y desarrollador backend.",
+  DESCRIPTION: "David Torres - Ingeniero Informático, desarrollador backend y entusiasta de Go. Mentoría gratuita, desarrollo de software y crecimiento personal. Valencia, España.",
 };
 
 // ============================================
@@ -84,7 +96,7 @@ export const SOCIALS: Socials = [
 
 export const NAV_LINKS: NavLink[] = [
   {
-    NAME: "Go for it",
+    NAME: "🚀 Go for it",
     HREF: "/go-for-it",
   },
   {
@@ -98,52 +110,40 @@ export const NAV_LINKS: NavLink[] = [
 // ============================================
 
 export const MENTORING: MentoringPage = {
-  TITLE: "Go for it",
-  DESCRIPTION: "Go for it: programa de mentoría gratuito. Sesiones personalizadas de 1 hora cada 2 semanas durante un semestre. Próxima edición: enero 2026.",
+  TITLE: "🚀 Go for it",
+  DESCRIPTION: "Go for it: programa de mentoría gratuita con David Torres. Sesiones personalizadas 1:1 sobre desarrollo de software, carrera profesional y crecimiento personal. Solo 4 plazas por semestre.",
   PARAGRAPHS: [
-    `¿Quieres mejorar en tu carrera y tu vida? <strong>Go for it</strong> es un programa de mentoría <strong>gratuito</strong> donde podemos trabajar juntos en tus objetivos.`,
-    `No solo hablamos de tecnología. Las sesiones pueden cubrir desarrollo de software, inversiones, estilo de vida, deporte, o cualquier área donde pueda aportarte valor.`,
-    `El programa está <strong>limitado a 4 personas por semestre</strong>. La próxima edición comienza el <strong>1 de enero de 2026</strong>.`,
+    `¿Te encuentras estancado en tu carrera? ¿Estás pasando por un bache personal? ¿Quieres mejorararte a ti mismo? <strong>🚀 Go for it</strong> es un programa de mentoría <strong>gratuito</strong> donde podemos trabajar juntos en tus objetivos.`,
+    `No solo hablamos de tecnología. Las sesiones pueden cubrir desarrollo de software, estilo de vida, filosofía, inversiones o en general cualquier área donde pueda aportarte valor.`,
   ],
+  CALLOUT: `El programa está limitado a <strong>4 personas por semestre</strong>.<br/>Próxima edición: <strong>1 de enero de 2026</strong>.`,
   YOUTUBE_ID: "CWDz1-w36h0",
-  VIDEO_TITLE: "Conoce Go for it",
+  VIDEO_TITLE: "Conoce 🚀 Go for it",
   FAQ_TITLE: "Preguntas frecuentes",
   FAQ: [
     {
       QUESTION: "¿Cómo funcionan las sesiones?",
-      ANSWER: "Realizamos una sesión de 1 hora cada 2 semanas, durante un semestre completo. Trabajamos en los temas que tú elijas.",
+      ANSWER: "Inicialmente, realizamos una sesión para conocernos, sin un tiempo definido. Posteriormente, realizamos una sesión de 1 hora cada 2 semanas, durante un semestre completo. Trabajamos en los temas que tú elijas.",
     },
     {
-      QUESTION: "¿Las sesiones son presenciales o por videollamada?",
-      ANSWER: "Si vives en Valencia o alrededores, es preferible quedar en persona. Si no, podemos hacerlo por videollamada sin problema.",
+      QUESTION: "¿Las sesiones han de ser presenciales?",
+      ANSWER: "Si vives en Valencia o alrededores, es preferible quedar en persona, a poder ser en un parque para entrenar (qué mejor manera de conocerse). Si no eres de Valencia o no te viene bien, no te preocupes, podemos hacer las sesiones por videollamada sin problema.",
     },
     {
       QUESTION: "¿Cuándo empieza el programa?",
-      ANSWER: "La próxima edición comienza el 1 de enero de 2026.",
+      ANSWER: "La próxima edición comienza el 1 de enero de 2026. Agendaré la primera sesión para conocernos durante el mes de enero.",
     },
     {
-      QUESTION: "¿Cuánto cuesta?",
-      ANSWER: "El programa es completamente gratuito. Mi objetivo es devolver a la comunidad y ayudar a personas que quieren mejorar.",
-    },
-    {
-      QUESTION: "¿Qué ganas tú con esto?",
-      ANSWER: "Ayudar a otros me enriquece y me permite aprender de diferentes perspectivas. Además, me ayuda a mejorar mi parte social e interactuar con gente nueva. Es un win-win.",
+      QUESTION: "¿Seguro que no cuesta nada? ¿Qué ganas tú con esto?",
+      ANSWER: "El programa es completamente gratuito. Por ahora esto es solo un proyecto personal que me hace ilusión hacer. Creo que al ser gratuito, el valor que puedo aportar es mucho mayor, ya que nunca va a estar condicionado por sacar dinero. No busco clientes, sino compañeros. Ayudar a otros me enriquece, me permite aprender de diferentes perspectivas y mejorar mi parte social. Es un win-win.",
     },
     {
       QUESTION: "¿Por qué te crees capaz de dar consejos?",
       ANSWER: "No voy a tomar ninguna decisión por ti ni decirte qué hacer. Mi rol es acompañarte y ayudarte a trabajar en que tomes tú mismo tus propias decisiones. Solo quiero ayudar, nada más.",
     },
     {
-      QUESTION: "¿Qué temas se pueden tratar?",
-      ANSWER: "Las sesiones no se limitan a tecnología. Podemos hablar de desarrollo de software, arquitectura, pero también de inversiones, estilo de vida, deporte, o cualquier área donde pueda aportarte.",
-    },
-    {
-      QUESTION: "¿Cuántas plazas hay disponibles?",
-      ANSWER: "El programa está limitado a 4 personas por semestre para poder dedicar el tiempo y atención necesarios a cada participante.",
-    },
-    {
-      QUESTION: "¿Cómo puedo entrar en el programa?",
-      ANSWER: "Contáctame por email o LinkedIn y cuéntame por qué quieres acceder al programa: cuáles son tus objetivos, en qué punto estás y qué esperas conseguir con la mentoría.",
+      QUESTION: "¿Por qué solo 4 personas por semestre?",
+      ANSWER: "El programa está limitado a 4 personas porque así puedo trabajar con una persona por semana, durante el semestre. De esta forma, puedo dedicar el tiempo y atención necesarios a cada participante, sin comprometer mi espacio personal. No te preocupes, si quedas fuera de la presente edición, te añadiré a la lista de espera para la próxima.",
     },
   ],
 };

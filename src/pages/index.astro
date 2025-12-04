@@ -8,41 +8,37 @@ import { HOME, BIO, FEATURED_VIDEO, PROMO } from "@consts";
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
 	<Container>
 		<h4 class="animate font-semibold text-black dark:text-white">
-			{BIO.GREETING} <span class="text-xl">{BIO.EMOJI}</span>
+			{BIO.GREETING}
+			<span class="text-xl">{BIO.EMOJI}</span>
 		</h4>
 		<div class="space-y-16">
 			<section class="space-y-6">
 				<article class="space-y-4">
-					{BIO.PARAGRAPHS.map((paragraph) => (
-						<p class="animate" set:html={paragraph} />
-					))}
+					{
+						BIO.PARAGRAPHS.map((paragraph) => (
+							<p class="animate" set:html={paragraph} />
+						))
+					}
 				</article>
-				<div class="animate aspect-video w-full rounded-xl overflow-hidden border border-black/10 dark:border-white/10">
-					<iframe
-						src={`https://www.youtube.com/embed/${FEATURED_VIDEO.YOUTUBE_ID}`}
-						title={FEATURED_VIDEO.TITLE}
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen
-						class="w-full h-full"
-					></iframe>
-				</div>
 			</section>
 
-			{PROMO.ENABLED && (
-				<section class="animate">
-					<a 
-						href={PROMO.LINK_HREF}
-						class="block p-6 rounded-xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 hover:bg-black/10 dark:hover:bg-white/10 transition-colors duration-300"
-					>
-						<p class="text-black dark:text-white font-semibold">
-							{PROMO.TEXT}
-						</p>
-						<p class="mt-2 underline underline-offset-2">
-							{PROMO.LINK_TEXT} →
-						</p>
-					</a>
-				</section>
-			)}
+			{
+				PROMO.ENABLED && (
+					<section class="animate">
+						<a
+							href={PROMO.LINK_HREF}
+							class="block p-6 rounded-xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 hover:bg-black/10 dark:hover:bg-white/10 transition-colors duration-300"
+						>
+							<p class="text-black dark:text-white font-semibold">
+								{PROMO.TEXT}
+							</p>
+							<p class="mt-2 underline underline-offset-2">
+								{PROMO.LINK_TEXT} →
+							</p>
+						</a>
+					</section>
+				)
+			}
 		</div>
 	</Container>
 </PageLayout>

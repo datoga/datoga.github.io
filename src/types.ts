@@ -33,6 +33,7 @@ export type MentoringPage = {
   TITLE: string;
   DESCRIPTION: string;
   PARAGRAPHS: string[];
+  CALLOUT?: string;
   YOUTUBE_ID: string;
   VIDEO_TITLE: string;
   FAQ_TITLE: string;
