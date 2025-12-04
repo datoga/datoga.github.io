@@ -123,7 +123,7 @@ export const MENTORING: MentoringPage = {
   FAQ: [
     {
       QUESTION: "¿En qué consiste el programa?",
-      ANSWER: "Inicialmente, realizamos una sesión para conocernos, sin un tiempo definido. Posteriormente, realizamos una sesión de 1 hora cada 4 semanas, durante un semestre completo. Trabajamos en los temas que tú elijas. Además, tendrás mi teléfono para que puedas contactarme en cualquier momento para aclaraciones, dudas o para apoyo.",
+      ANSWER: "Inicialmente, realizamos una sesión para conocernos, sin un tiempo definido. Posteriormente, realizamos una sesión de 1 hora cada 4 semanas, durante un semestre completo. Trabajamos en los temas que tú elijas. Además, tendrás mi WhatsApp para que puedas contactarme en cualquier momento para aclaraciones, dudas o para apoyo.",
     },
     {
       QUESTION: "¿Las sesiones han de ser presenciales?",
