@@ -30,35 +30,18 @@ import { MENTORING } from "@consts";
 									class="text-base font-medium text-blue-900 dark:text-blue-100 leading-relaxed"
 									set:html={MENTORING.CALLOUT}
 								/>
-								<h3 class="text-lg font-semibold text-blue-900 dark:text-blue-100 pt-2">
-									¿En qué consiste?
-								</h3>
-								<ul class="space-y-2 list-none text-blue-800 dark:text-blue-200">
-									<li>
-										👋 Sesión inicial para conocernos, sin
-										tiempo definido.
-									</li>
-									<li>
-										📅 Sesiones de 1 hora cada 4 semanas
-										durante un semestre.
-									</li>
-									<li>
-										✅ Sesión final para evaluar objetivos y
-										trabajo futuro.
-									</li>
-									<li>
-										🎯 Trabajamos en los temas que tú
-										elijas.
-									</li>
-									<li>
-										💬 Tendrás mi teléfono para contactarme
-										cuando lo necesites.
-									</li>
-									<li>
-										🤝 Al finalizar, quedada grupal para
-										quienes lo deseen.
-									</li>
-								</ul>
+								{MENTORING.CALLOUT_SUBTITLE && (
+									<h3 class="text-lg font-semibold text-blue-900 dark:text-blue-100 pt-2">
+										{MENTORING.CALLOUT_SUBTITLE}
+									</h3>
+								)}
+								{MENTORING.FEATURES && (
+									<ul class="space-y-2 list-none text-blue-800 dark:text-blue-200">
+										{MENTORING.FEATURES.map((feature) => (
+											<li>{feature}</li>
+										))}
+									</ul>
+								)}
 							</div>
 						)
 					}
