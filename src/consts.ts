@@ -152,6 +152,10 @@ export const MENTORING: MentoringPage = {
       ANSWER: "El programa está limitado a 4 personas porque así puedo trabajar con una persona por semana, durante el semestre. De esta forma, puedo dedicar el tiempo y atención necesarios a cada participante, sin comprometer mi espacio personal. No te preocupes, si quedas fuera de la presente edición, te añadiré a la lista de espera para la próxima.",
     },
     {
+      QUESTION: "¿Cómo seleccionarás a los candidatos?",
+      ANSWER: "La selección será de forma totalmente discrecional. Elegiré a aquellas personas que resuenen más conmigo, a las que vea que les puedo aportar valor, que más lo necesiten, o simplemente cuyas razones para participar en el programa me convenzan de que es una buena idea trabajar con ellas.",
+    },
+    {
       QUESTION: "¿Será confidencial?",
       ANSWER: "Sí, todo lo que hagamos será confidencial. No voy a guardar ningún tipo de información personal. No voy a hacer ningún tipo de seguimiento, ni nada que pueda comprometer tu privacidad. Si estás más a gusto, podemos incluso firmar un acuerdo de confidencialidad.",
     },
