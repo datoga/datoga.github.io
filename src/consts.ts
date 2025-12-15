@@ -130,6 +130,8 @@ export const MENTORING: MentoringPage = {
   ],
   YOUTUBE_ID: "CWDz1-w36h0",
   VIDEO_TITLE: "Conoce 🚀 Go for it!",
+  WHATSAPP_LINK: "https://chat.whatsapp.com/Bph7E8ME7TD8ZlGJ540ltH",
+  WHATSAPP_TEXT: "Únete al programa",
   FAQ_TITLE: "Preguntas frecuentes",
   FAQ: [
     {
